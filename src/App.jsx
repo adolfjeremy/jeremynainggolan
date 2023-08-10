@@ -1,7 +1,14 @@
-import "./App.css";
+import HeroCta from "./parts/HeroCta";
+import "./styles/index.scss";
 
 function App() {
-    return <></>;
+    return (
+        <>
+            <main>
+                <HeroCta />
+            </main>
+        </>
+    );
 }
 
 export default App;

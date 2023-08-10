@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600&display=swap");
+
+$black: #171c28;
+$white: #ffffff;
+$grey: #f5f5f5;
+$purple: #9146ff;
+$green: #64ffda;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: $white;
+    font-family: "Source Sans 3", sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: $black;
+}
+
+main {
+    min-height: 100vh;
+    padding: 0 7%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 769px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 100vh;
+    h1 {
+        font-size: 5.5rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin: 0;
+    }
+    .greetings {
+        color: $green;
+        font-size: 1.125rem;
+        margin: 0;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    .title {
+        font-weight: 500;
+        font-size: 2rem;
+        margin: 0;
+        color: $grey;
+    }
+    .subtitle {
+        font-weight: 400;
+        font-size: 1.25rem;
+        margin: 0;
+        color: $grey;
+    }
+}
